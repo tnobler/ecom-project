@@ -23,10 +23,10 @@
     width: 600px;
     display: grid;
     grid-template-columns: [s] 1fr [m] 1fr [e];
-    grid-template-rows: [s] 1fr [sm] 1fr [m-s] 25px [me] 1fr [e] 1fr;
+    grid-template-rows: [s] 1fr [sm] 1fr [m-s] 25px [m-e] 1fr [me] 1fr [e];
     &__order-date {
         grid-column: s/m;
-        grid-row: s/m;
+        grid-row: s/sm;
     }
     &__order-number {
         grid-column: s/m;
@@ -54,7 +54,7 @@
     }
     &__track-shipment,
     &__print-receipt {
-        width: 100px;
+        width: 150px;
         justify-self: center;
         text-decoration-line: underline;
         color: #00CB79;

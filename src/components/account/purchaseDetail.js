@@ -17,7 +17,7 @@ class PurchaseDetail extends Component {
       const { name, shippingAddress } = user;
       const nameAddress = `${name}        ${shippingAddress}`;
     return (
-      <div className={`${className} puchase-detail`}>
+      <div className={`${className} purchase-detail`}>
         <PurchaseDetailLabel 
           className='purchase-detail__order-number'
           title='Order Number'
