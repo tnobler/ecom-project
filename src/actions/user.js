@@ -1,6 +1,14 @@
-import {
-    SET_USER_PURCHASES
+import { 
+    SET_USER_PURCHASES,
+    SET_PURCHASE_DETAIL
 } from './types';
+
+export function setPurchaseDetail(_id) {
+    return ({
+        type: SET_PURCHASE_DETAIL,
+        payload: _id
+    })
+}
 
 export function fetchUserPurchases() {
     return ({
@@ -24,7 +32,7 @@ export function fetchUserPurchases() {
                 orderDate: new Date(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Max Nelson',
+                    name: 'Maxwell Nelson',
                     shippingAddress: '1337 West State Street'
                 }
             },
@@ -47,7 +55,7 @@ export function fetchUserPurchases() {
                 creditCard: '-0000',
                 user: {
                     name: 'Max Asher Nelson',
-                    shippingAddress: '1337 West State Street'
+                    shippingAddress: '1234 West State Street'
                 }
             },
             {
@@ -94,6 +102,7 @@ export function fetchUserPurchases() {
                     shippingAddress: '348 Yo State Street'
                 }
             },
+          
         ]
     })
 }

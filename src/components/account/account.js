@@ -36,7 +36,7 @@ class Account extends Component {
                 title: 'Account Information',
                 active: false,
                 component: <AccountInformation/>
-            },
+            }
         ]
 
         this.props.setHeaderLinks(headerLinks);
@@ -48,7 +48,7 @@ class Account extends Component {
         if(this.props.navbarLinks) {
             this.props.navbarLinks.forEach(link => {
                 if(link.active) {
-                    jsx = link.component
+                    jsx = link.component;
                 }
             })
         }
