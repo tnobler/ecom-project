@@ -9,7 +9,7 @@ const INITIAL_STATE = {
         _id: -1,
         total: 0,
         orderNumber: '',
-        orderDate: new Date().toDateString(),
+        orderDate: null,
         creditCard: '',
         user: {
             name: '',
