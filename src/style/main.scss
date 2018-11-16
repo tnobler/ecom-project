@@ -28,14 +28,17 @@ body {
 
 
 // ACCOUNT
-@import 'account/account-information';
-@import 'account/purchase-history';
 @import 'account/account';
+@import 'account/purchase-history';
+@import 'account/account-information';
 
 //SHOP
 @import 'shop/shop';
 @import 'shop/shop-search-bar';
 @import 'shop/shop-product';
+
+// CART
+@import 'shop/shop-cart';
 
 // QUANTITY
 @import 'quantity';
