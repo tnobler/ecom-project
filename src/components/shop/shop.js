@@ -29,7 +29,7 @@ class Shop extends Component {
     }
 
     onSubmit = (fields) => {
-        console.log(fields);
+        this.props.filterProductsWithQuery(fields)
     }
 
     render () {
@@ -60,10 +60,9 @@ class Shop extends Component {
 }
 
 function mapStateToProps(state) {
-    const { categories, products, filteredProducts } = state.shop;
+    const { categories, filteredProducts } = state.shop;
     return {
         categories,
-        products,
         filteredProducts
    }
 }
