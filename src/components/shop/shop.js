@@ -44,7 +44,7 @@ class Shop extends Component {
     }
 
     render () {
-        return <ShopCart className='shop-cart'/>
+        // return <ShopCart className='shop-cart'/>
 
         return (
             <div className='shop'>
