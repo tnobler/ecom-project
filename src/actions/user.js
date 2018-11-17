@@ -1,6 +1,7 @@
 import { 
     SET_USER_PURCHASES,
-    SET_PURCHASE_DETAIL
+    SET_PURCHASE_DETAIL,
+    SET_CART_PRODUCTS
 } from './types';
 
 export function setPurchaseDetail(_id) {
@@ -9,6 +10,36 @@ export function setPurchaseDetail(_id) {
         type: SET_PURCHASE_DETAIL,
         payload: _id
     })
+}
+
+export function fetchCartProducts() {
+    return ({
+        type: SET_CART_PRODUCTS,
+        payload: [
+            {
+                _id: 0,
+                product: {
+                    _id: 0,
+                    title: 'JavaScript in the Browser',
+                    description: 'The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. ... Dude i just had to do the The Fitness Gram™ Pacer Test and i am sooooo tired. Get a The Fitness Gram™ Pacer Test mug for your sister-in-law Helena.',
+                    price: 1.99,
+                    belongsTo: [0, 1]
+                },
+                quantity: 2
+            },
+            {
+                _id: 1,
+                product: {
+                    _id: 1,
+                    title: 'Graph Database',
+                    description: 'The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. ... Dude i just had to do the The Fitness Gram™ Pacer Test and i am sooooo tired. Get a The Fitness Gram™ Pacer Test mug for your sister-in-law Helena.',
+                    price: 1.99,
+                    belongsTo: [0, 6]
+                },
+                quantity: 1
+            },
+        ]
+    });
 }
 
 export function fetchUserPurchases() {
