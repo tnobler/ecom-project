@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Quantity from './quantity';
+import Quantity from '../quantity';
 import GreenPriceTag from '../greenPriceTag';
 
 class CartProduct extends Component {
     render () {
         console.log(this.props);
         const { className, product, quantity } = this.props;
-        const { title, description, price } = product;
+        const { title, price } = product;
         return (
             <div className={`${className} cart-product`}>
                 <img className='cart-product__image' src='http://via.placeholder.com/130x130'/>
